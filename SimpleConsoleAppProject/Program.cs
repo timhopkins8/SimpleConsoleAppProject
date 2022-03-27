@@ -17,14 +17,14 @@ do
     switch (option)
     {
         case "1":
-            Console.WriteLine("Enter your DOB in this format MM/DD/YYYY");            
+            Console.Write("Enter your DOB in this format MM/DD/YYYY: ");            
             CalculateAge age = new CalculateAge(Console.ReadLine());
             Console.WriteLine($"You are {age.CalculateAgeFromDob()} years old.");
             break;
         case "2":
             Console.WriteLine($"The current date and time is {DateTime.Now.ToString("f")}");
             break;
-        case "3":
+        case "q":
             Console.WriteLine("Program is ending....");
             break;
         default:
